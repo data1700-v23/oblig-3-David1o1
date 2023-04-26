@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>oblig 2  s325821</title>
+</head>
+<script src="index.js"></script>
+<body>
+<h1>Bestilling av kinobilletter</h1>
+
+<label for="film">Velg film</label>
+<select name="film" id="film">
+    <option value="Velg film her:">Velg film her:</option>
+    <option value="Spiderman">Spiderman</option>
+    <option value="Constantine">Constantine</option>
+    <option value="Shazam">Shazam</option>
+    <option value="Black Adam">Black Adam</option>
+    <option value="Morbius">Morbius</option>
+</select>
+
+<table>
+    <tr><td><label for="antall">Antall:</label><td>
+        <td><input id="antall" type="number" min="0" max="10"></td>
+        <td class="feilmelding" id="feilAntall"></td></tr>
+</table>
+<br>
+
+<table>
+    <tr><td><label for="navn">Fornavn:</label></td>
+        <td><input type="text" id="navn" name="navn"></td>
+        <td class="feilmelding" id="feilNavn"></td></tr>
+
+    <tr><td><label for="etterNavn">Etternavn:</label></td>
+        <td><input type="text" id="etterNavn" name="etterNavn"></td>
+        <td class="feilmelding" id="feilEtterNavn"></td></tr>
+
+    <tr><td><label for="telefon">Telefon:</label></td>
+        <td><input type="number" id="telefon" name="telefon"></td>
+        <td class="feilmelding" id="feilTel"></td></tr>
+
+    <tr><td><label for="epost">Epost:</label></td>
+        <td><input type="text" id="epost" name="epost"></td>
+        <td class="feilmelding" id="feilEpost"></td></tr>
+</table>
+
+<button onclick="kjopBillett()">Kjøp billett</button>
+
+<br> <br>
+
+<h2>Alle billetter:</h2>
+<div id="kjopet"></div>
+
+<button onclick="slettBillett()">Slett alle billetter</button>
+<script src="index.js" type="application/javascript"></script>
+
+</body>
+</html>
